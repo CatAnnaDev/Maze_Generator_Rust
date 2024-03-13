@@ -1,7 +1,7 @@
 use rand::{thread_rng, Rng, rngs::ThreadRng};
 
-const WIDTH: usize = 5;
-const HEIGHT: usize = 5;
+const WIDTH: usize = 12;
+const HEIGHT: usize = 12;
 
 #[derive(Clone, Copy)]
 struct Cell {
@@ -73,8 +73,8 @@ impl Maze {
     }
 
     fn paint_wall(h_wall: bool, active: bool) {
-        if h_wall { print!("{}", if active { "+---" } else { "+   " }); }
-        else{ print!("{}", if active { "|   " } else { "    " }); }
+        if h_wall { print!("{}", if active { "+-----" } else { "+     " }); }
+        else{ print!("{}", if active { "|     " } else { "      " }); }
     }
 
     fn paint_close_wall(h_wall: bool) {
