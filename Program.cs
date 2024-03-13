@@ -109,7 +109,7 @@ public class Maze
 
             if (firstLine == string.Empty)
             {
-                firstLine = $"    {sbTop}";
+                firstLine = $"    {sbTop}+";
             }
             Console.WriteLine($"    {sbTop}+");
             Console.WriteLine($"    {sbMid}|");
@@ -126,7 +126,7 @@ class Program
 
     static void Main(string[] args)
     {
-        new Maze(5, 5).Display();
+        new Maze(12, 12).Display();
     }
 }
 
